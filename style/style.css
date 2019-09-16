@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Dauphin";
+  src: url(fonts/dauphin/Dauphin.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Dauphin";
+  line-height: 90px;
+  font-size: 70px;
+}
+
+h4 {
+  margin: 10px 10px 5px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+h5 {
+  margin: 5px 10px 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+hr {
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  border: 0px;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 15px;
+}
+
+.boxed {
+  margin: 10px 3%;
+}
+
+.boxed .int-link {
+  color: #ff0000;
+  font-weight: 700;
+}
+
+.boxed img {
+  margin: 10px 5px 0px;
+  border: 0;
+}
+
+.ext-link a {
+  color: #000;
+  margin: 0 5px;
+}
+
+#languages {
+  margin: 20px 15px 5px;
+}
+
+#languages a {
+  color: #000;
+  line-height: 20px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#lipsum-info {
+  display: grid;
+  padding: 0 3%;
+}
+
+#lipsum-info div h2 {
+  line-height: 24px;
+  font-size: 24px;
+  text-align: left;
+  margin: 15px 0 10px 0;
+  font-family: "Dauphin";
+}
+
+#translate-help {
+  color: #ff0000;
+}
+
+#lipsum-translations {
+  text-align: left;
+  margin: 0 3%;
+}
+
+#lipsum-translations h3 {
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#lipsum-generator {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 379px;
+  margin-bottom: 15px;
+}
+
+#lipsum-type,
+#lipsum-start {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 3%;
+}
+
+#lipsum-start {
+  max-width: 219px;
+}
+
+#lipsum-amount {
+  width: 10%;
+  align-self: center;
+  margin-right: 5px;
+}
+
+#lipsum-amount input {
+  width: 40px;
+  height: 30px;
+}
+
+#btn-submit {
+  margin: 10px 0 0;
+  padding: 3px 10px;
+  border: 1px solid #999;
+  background: #eee;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #000;
+}
+
+#footer a:hover {
+  color: #ff0000;
+}
+
+@media (max-width: 980px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 58px;
+  }
+  #container {
+    width: 320px;
+  }
+  #languages a img {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) {
+  #lipsum-info {
+    grid-template-columns: minmax(212px, 1fr) minmax(212px, 1fr);
+    grid-column-gap: 3%;
+  }
+}
